@@ -1,3 +1,4 @@
+#include <dns_sd.h>
 #import <Foundation/Foundation.h>
 #import "DNSResponse.h"
 

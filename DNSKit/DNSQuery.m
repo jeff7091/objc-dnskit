@@ -1,6 +1,5 @@
-#include <dns_sd.h>
-#include "dns_util.h"
 #import "DNSQuery.h"
+#include "dns_util.h"
 
 @interface DNSQuery ()
   @property(nonatomic,copy) DNSQueryReplyBlock block;
