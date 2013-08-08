@@ -5,8 +5,8 @@
 @interface DNSQuery ()
   @property(nonatomic,copy) DNSQueryReplyBlock block;
   // GCD props.
-  @property(nonatomic,retain) dispatch_source_t source;
-  @property(nonatomic,retain) dispatch_source_t timer;
+  @property(nonatomic) dispatch_source_t source;
+  @property(nonatomic) dispatch_source_t timer;
   // DNS API props.
   @property(nonatomic) DNSServiceRef sdRef;
   @property(nonatomic) BOOL sdRefIsActive;
