@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "DNSKit"
-  s.version      = "0.0.1A"
+  s.version      = "0.0.1"
   s.summary      = "Access to DNS queries the Objective-C way."
   s.homepage     = "https://github.com/jeff7091/objc-dnskit"
   s.license      = { :type => 'Apache 2.0', :file => 'LICENSE' }
