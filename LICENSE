@@ -1,3 +1,7 @@
+NOTE: The files dns_util.c and dns_util.h are covered by the Apple Public Source
+License Version 2.0 (http://www.opensource.apple.com/apsl/). The remainder of the
+source is covered by the Apache License 2.0 (see below).
+
 Apache License
 Version 2.0, January 2004
 http://www.apache.org/licenses/
