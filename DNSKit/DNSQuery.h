@@ -9,6 +9,6 @@ typedef void (^DNSQueryReplyBlock)(DNSResponse *response);
   @property(nonatomic) uint16_t rrClass;
   @property(nonatomic) uint16_t timeout;
 
-  -(id)init;
   -(BOOL)searchWithName:(NSString*)name block:(DNSQueryReplyBlock)block;
+  -(void)cancel;
 @end

@@ -151,6 +151,10 @@ dns_query_record_reply_handler(DNSServiceRef sdRef,
   return YES;
 }
 
+- (void)cancel {
+  [self goInert];
+}
+
 - (void)dealloc {
   [self goInert];
   [self clearBuild];
