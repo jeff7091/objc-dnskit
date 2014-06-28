@@ -106,7 +106,7 @@
 
 @implementation DNSARecord
 + (DNSARecord*)recordWithStruct:(dns_resource_record_t*)c_record {
-  char ipaddr[INET_ADDRSTRLEN + 1];
+  char ipaddr[INET_ADDRSTRLEN];
   dns_address_record_t *A = c_record->data.A;
   if (!inet_ntop(AF_INET, &A->addr, ipaddr, sizeof ipaddr)) return nil;
   DNSARecord *retval = [[DNSARecord alloc] init];
@@ -217,7 +217,7 @@
 
 @implementation DNSAAAARecord
 +(DNSAAAARecord*)recordWithStruct:(dns_resource_record_t*)c_record {
-  char ipaddr[INET6_ADDRSTRLEN + 1];
+  char ipaddr[INET6_ADDRSTRLEN];
   dns_in6_address_record_t *AAAA = c_record->data.AAAA;
   if (!inet_ntop(AF_INET6, &AAAA->addr, ipaddr, sizeof ipaddr)) return nil;
   DNSAAAARecord *retval = [[DNSAAAARecord alloc] init];
